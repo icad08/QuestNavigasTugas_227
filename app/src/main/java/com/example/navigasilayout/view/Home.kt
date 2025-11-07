@@ -25,3 +25,4 @@ fun Home(
             contentDescription = "Logo Strava",
             modifier = Modifier.size(150.dp)
         )
+        Spacer(modifier = Modifier.height(40.dp))
