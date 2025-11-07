@@ -111,3 +111,16 @@ fun FormIsian(
             }
 
             Spacer(modifier = Modifier.height(20.dp))
+
+            Text(text = "Alamat", fontSize = 12.sp, color = Color.Gray)
+            OutlinedTextField(
+                value = textAlamat,
+                onValueChange = { textAlamat = it },
+                placeholder = { Text("Alamat") },
+                modifier = Modifier.fillMaxWidth(),
+                singleLine = true,
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = Color(0xFF8A2BE2),
+                    unfocusedBorderColor = Color.LightGray
+                )
+            )
