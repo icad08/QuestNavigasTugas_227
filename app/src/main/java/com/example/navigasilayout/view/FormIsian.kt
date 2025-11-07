@@ -6,6 +6,8 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -52,4 +54,17 @@ fun FormIsian(
                 .fillMaxSize()
                 .padding(horizontal = 24.dp, vertical = 20.dp),
             horizontalAlignment = Alignment.Start
-        )
+        ) {
+
+            Text(text = "Nama_Lengkap", fontSize = 12.sp, color = Color.Gray)
+            OutlinedTextField(
+                value = textNama,
+                onValueChange = { textNama = it },
+                placeholder = { Text("Isian nama lengkap") },
+                modifier = Modifier.fillMaxWidth(),
+                singleLine = true,
+                colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = Color(0xFF8A2BE2),
+                    unfocusedBorderColor = Color.LightGray
+                )
+            )
