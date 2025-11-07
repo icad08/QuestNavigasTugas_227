@@ -2,6 +2,7 @@ package com.example.navigasilayout
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 
@@ -36,4 +37,10 @@ fun DataApp (
             }
         }
     }
+}
+
+private fun cancelAndBackToFormulir(
+    navController: NavHostController
+){
+    navController.popBackStack(com.example.navigasi.view.Navigasi.Formulir.name, inclusive = false)
 }
