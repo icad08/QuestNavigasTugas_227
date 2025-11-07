@@ -49,4 +49,12 @@ fun Home(
                 containerColor = Color(0xFF6200EE)
             ),
             modifier = Modifier.padding(horizontal = 32.dp)
-        )
+        ){
+            Text(
+                text = "Submit",
+                modifier = Modifier.padding(vertical = 8.dp),
+                fontSize = 16.sp
+            )
+        }
+    }
+}
