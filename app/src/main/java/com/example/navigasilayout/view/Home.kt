@@ -41,3 +41,12 @@ fun Home(
         )
 
         Spacer(modifier = Modifier.height(40.dp))
+
+        Button(
+            onClick = onSubmitClick,
+            shape = RoundedCornerShape(12.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF6200EE)
+            ),
+            modifier = Modifier.padding(horizontal = 32.dp)
+        )
