@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -81,3 +82,15 @@ fun TampilData(
             ) {
                 Text(text = "Kembali")
             }
+            Spacer(modifier = Modifier.height(height = 10.dp))
+            OutlinedButton(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = onBackToHomeClick
+            ) {
+                Text(text = "Home")
+            }
+        }
+        }
+
+    }
+}
