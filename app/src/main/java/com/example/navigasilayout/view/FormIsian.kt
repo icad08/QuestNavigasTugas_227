@@ -47,3 +47,9 @@ fun FormIsian(
                 fontWeight = FontWeight.Bold
             )
         }
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 24.dp, vertical = 20.dp),
+            horizontalAlignment = Alignment.Start
+        )
