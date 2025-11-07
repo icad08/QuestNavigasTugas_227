@@ -26,3 +26,9 @@ fun Home(
             modifier = Modifier.size(150.dp)
         )
         Spacer(modifier = Modifier.height(40.dp))
+
+        Text(
+            text = "Pascal Pahlevi Pasha",
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Medium
+        )
