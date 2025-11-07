@@ -148,6 +148,6 @@ fun FormIsian(
 @Preview(showBackground = true)
 @Composable
 fun FormIsianPreview() {
-    com.example.navigasi.view.FormIsian(OnSubmitBtnClick = {})
+    FormIsian(OnSubmitBtnClick = {})
 }
 
