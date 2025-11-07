@@ -19,3 +19,4 @@ fun Home(
             fontWeight = FontWeight.Bold,
             color = Color(0xFF6200EE)
         )
+        Spacer(modifier = Modifier.height(40.dp))
