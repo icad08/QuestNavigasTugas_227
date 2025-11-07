@@ -20,3 +20,8 @@ fun Home(
             color = Color(0xFF6200EE)
         )
         Spacer(modifier = Modifier.height(40.dp))
+        Image(
+            painter = painterResource(id = R.drawable.stravaHM),
+            contentDescription = "Logo Strava",
+            modifier = Modifier.size(150.dp)
+        )
