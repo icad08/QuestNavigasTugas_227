@@ -1,6 +1,8 @@
 package com.example.navigasilayout.view
 
+import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -16,3 +18,5 @@ fun TampilData(
         Pair(first = stringResource(id = R.string.jenis_kelamin), second = "Lainnya"),
         Pair(first = stringResource(id = R.string.alamat), second = "Yogyakarta")
     )
+    Scaffold(modifier = Modifier,
+        topBar =
