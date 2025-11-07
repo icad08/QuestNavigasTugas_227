@@ -124,3 +124,6 @@ fun FormIsian(
                     unfocusedBorderColor = Color.LightGray
                 )
             )
+
+            Spacer(modifier = Modifier.weight(1f))
+
