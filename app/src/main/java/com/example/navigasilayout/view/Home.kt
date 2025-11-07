@@ -33,3 +33,11 @@ fun Home(
             fontWeight = FontWeight.Medium
         )
         Spacer(modifier = Modifier.height(8.dp))
+
+        Text(
+            text = "20250140001",
+            fontSize = 18.sp,
+            color = Color.Gray
+        )
+
+        Spacer(modifier = Modifier.height(40.dp))
