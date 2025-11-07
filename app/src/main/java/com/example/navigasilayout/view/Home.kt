@@ -32,3 +32,4 @@ fun Home(
             fontSize = 20.sp,
             fontWeight = FontWeight.Medium
         )
+        Spacer(modifier = Modifier.height(8.dp))
