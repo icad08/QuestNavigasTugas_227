@@ -1,4 +1,4 @@
-package com.example.navigasi
+package com.example.navigasilayout
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -10,10 +10,13 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.navigasilayout.view.FormIsian
 import com.example.navigasilayout.view.TampilData
+import com.example.navigasilayout.view.Home
+
 
 enum class Navigasi{
     Formulir,
-    Detail
+    Detail,
+    Home
 }
 
 @Composable
@@ -25,8 +28,16 @@ fun DataApp(
             isiRuang->
         NavHost(
             navController = navController,
-            startDestination = Navigasi.Formulir.name,
+            startDestination = Navigasi.Home.name,
             modifier = modifier.padding(isiRuang)){
+
+            composable(route = Navigasi.Home.name) {
+                Home(
+                    onSubmitClick = {
+                        navController.navigate(Navigasi.Formulir.name)
+                    }
+                )
+            }
 
             composable(route = Navigasi.Formulir.name){
                 FormIsian(
@@ -38,8 +49,9 @@ fun DataApp(
             composable(route = Navigasi.Detail.name){
                 TampilData(
                     OnBackBtnClick = { cancelAndBackToFormulir(navController) },
-                    onBackToHomeClick = { cancelAndBackToFormulir(navController) }
+                    onBackToHomeClick = { navController.navigate(Navigasi.Home.name) }
                 )
+
             }
         }
     }
@@ -48,5 +60,5 @@ fun DataApp(
 private fun cancelAndBackToFormulir(
     navController: NavHostController
 ){
-    navController.popBackStack(Navigasi.Formulir.name, inclusive = false)
+    navController.popBackStack(Navigasi.Home.name, inclusive = false)
 }

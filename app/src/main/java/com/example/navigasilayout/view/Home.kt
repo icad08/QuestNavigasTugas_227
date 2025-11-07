@@ -30,7 +30,7 @@ fun Home(
     Column(
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFFF3E5F5))
+            .background(Color.Black)
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
@@ -43,21 +43,21 @@ fun Home(
         )
         Spacer(modifier = Modifier.height(40.dp))
         Image(
-            painter = painterResource(id = R.drawable.stravaHM),
+            painter = painterResource(id = R.drawable.strava),
             contentDescription = "Logo Strava",
             modifier = Modifier.size(150.dp)
         )
         Spacer(modifier = Modifier.height(40.dp))
 
         Text(
-            text = "Pascal Pahlevi Pasha",
+            text = "Muhammad Irsyad RM",
             fontSize = 20.sp,
             fontWeight = FontWeight.Medium
         )
         Spacer(modifier = Modifier.height(8.dp))
 
         Text(
-            text = "20250140001",
+            text = "20230140227",
             fontSize = 18.sp,
             color = Color.Gray
         )
