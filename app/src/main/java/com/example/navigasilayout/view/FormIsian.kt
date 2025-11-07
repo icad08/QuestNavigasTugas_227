@@ -93,3 +93,19 @@ fun FormIsian(
             }
 
             Spacer(modifier = Modifier.height(20.dp))
+
+            Text(text = "Status Perkawinan", fontSize = 12.sp, color = Color.Gray)
+            Column {
+                listStatus.forEach { item ->
+                    Row(
+                        modifier = Modifier.selectable(
+                            selected = textStatus == item,
+                            onClick = { textStatus = item }
+                        ),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        RadioButton(selected = textStatus == item, onClick = { textStatus = item })
+                        Text(text = item)
+                    }
+                }
+            }
