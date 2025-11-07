@@ -17,3 +17,5 @@ fun FormIsian(
     var textJK by remember { mutableStateOf("") }
     var textStatus by remember { mutableStateOf("") }
 
+    val listJenisKelamin: List<String> = listOf("Laki-laki", "Perempuan")
+    val listStatus: List<String> = listOf("Janda", "Lajang", "Duda")
