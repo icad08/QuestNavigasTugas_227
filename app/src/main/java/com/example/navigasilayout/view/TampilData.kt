@@ -1,5 +1,8 @@
 package com.example.navigasilayout.view
 
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -36,4 +39,8 @@ fun TampilData(
                     containerColor = colorResource(id = R.color.teal_700)
                 )
             )
-        })
+        }){ isiRuang ->
+        Column(
+            modifier = Modifier.padding(paddingValues = isiRuang),
+            verticalArrangement = Arrangement.SpaceBetween
+        )
